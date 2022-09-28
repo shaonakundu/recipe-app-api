@@ -1,5 +1,5 @@
 """
-Django command to wait for the Database to be available 
+Django command to wait for the Database to be available
 """
 import time
 
@@ -26,6 +26,3 @@ class Command(BaseCommand):
                 time.sleep(1)
 
         self.stdout.write(self.style.SUCCESS('Database available!'))
-
-
-
